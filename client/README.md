@@ -40,3 +40,11 @@ npm install font-awesome --save
 
 Import `BrowsersAnimationModule` in `app.component.ts`:<br>
 `import { BrowserAnimationsModule } from '@angular/platform-browser/animations';`
+
+## Develop the Angular App
+
+### Create the NavBar Component
+
+```
+ng g c nav-bar
+```
