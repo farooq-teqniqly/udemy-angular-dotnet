@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Product } from './models/product';
+import { ProductService } from './services/product.service';
 
 @Component({
   selector: 'app-root',
@@ -11,13 +11,13 @@ export class AppComponent implements OnInit {
   title = 'clever';
   products: any[];
 
-  constructor(private http: HttpClient) {}
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:5001/api/Products').subscribe(
-      (response: Product[]) => {
-        console.log(response);
-        this.products = response;
+    this.productService.getProducts().subscribe(
+      (products: Product[]) => {
+        console.log(products);
+        this.products = products;
       },
       (error) => {
         console.log(error);
