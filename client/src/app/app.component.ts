@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:5001/api/products').subscribe(
+    this.http.get('https://localhost:5001/api/Products').subscribe(
       (response: any) => {
         console.log(response);
       },
