@@ -4,6 +4,7 @@ using Api.Controllers.Models;
 using Api.Data.Entities;
 using Api.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Api.Controllers
 {

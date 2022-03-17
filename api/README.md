@@ -47,3 +47,19 @@ dotnet ef migrations add InitialCreate -o Data/Migrations
 ```
 dotnet ef database update
 ```
+
+## Add App Insights Logging
+
+Install the Nuget package:
+
+```
+dotnet add package Microsoft.ApplicationInsights.AspNetCore
+```
+
+Add the App Insights Key to appsettings.Development.json:
+
+```
+"ApplicationInsights": {
+    "InstrumentationKey": "[Your App Insights Key]"
+  }
+```
