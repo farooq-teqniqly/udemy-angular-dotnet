@@ -63,3 +63,7 @@ Add the App Insights Key to appsettings.Development.json:
     "InstrumentationKey": "[Your App Insights Key]"
   }
 ```
+
+## Add Auth and Auth
+https://www.freecodecamp.org/news/authenticate-and-authorize-apis-in-dotnet5/
+
