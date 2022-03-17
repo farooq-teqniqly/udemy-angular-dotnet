@@ -14,6 +14,9 @@
 
 `ng new client --strict false`
 
+Open `tsconfig.json` and add the following to the `angularCompilerOptions` section:
+`strictTemplates: true`
+
 ### Configure for SSL
 
 1. Create a folder named `cert` inside the application.
